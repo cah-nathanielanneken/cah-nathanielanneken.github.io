@@ -9,7 +9,7 @@
 <body>
     <section id="alert-wrapper">
         <div id="success-alert" class="alert alert-success alert-dismissible" role="alert">
-            Class Successfully Loaded!
+            Muy Bien!
             <button type="button" class="close" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
@@ -23,7 +23,7 @@
     </section>
     <section id="class-selector">
         <input type="file" id="fileSelect" class="btn btn-primary"/>
-        <input type="button" id="upload" value="Clase" onclick="Upload()" class="btn btn-primary"/>
+        <input type="button" id="upload" value="Vamos" onclick="Upload()" class="btn btn-primary"/>
     </section>
     <section id="random-section">
         <input type="button" id="select-one-student" value="Selecionar Un Estudiante" onclick="select_one_student()" class="btn btn-primary"/>
@@ -42,7 +42,7 @@
                     <div class="modal-body">
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                     </div>
                 </div>
             </div>
@@ -59,15 +59,15 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <label for="groupSize">Group Size (1-10):</label>
+                            <label for="groupSize">Numero De Personas (1-10):</label>
                             <input type="number" id="groupSize" name="groupSize" min="1" max="10"/>
                             <div id="studentGroupBlock">
 
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <input type="button" value="Submit" class="btn btn-primary" onclick="generate_random_groups()"/>
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <input type="button" value="Vamos" class="btn btn-primary" onclick="generate_random_groups()"/>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                         </div>
                     </div>
                 </div>
@@ -129,7 +129,7 @@
                 }
                 
                 if (curr_group.length >= groupSize) {
-                    html_to_insert += `<li>Group ${group_num++}: ${curr_group.join(", ")}</li>`
+                    html_to_insert += `<li>Grupo ${group_num++}: ${curr_group.join(", ")}</li>`
                     curr_group = [];
                 }
             }
