@@ -39,7 +39,7 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body" id="random-student-select">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -105,7 +105,7 @@
         }
 
         function select_one_student() {
-            $(".modal-body").html("<strong>" + student_list[Math.floor(Math.random() * student_list.length)] + "</strong>");
+            $("#random-student-select").html("<strong>" + student_list[Math.floor(Math.random() * student_list.length)] + "</strong>");
             $("#randomChoiceModal").modal();
         }
 
